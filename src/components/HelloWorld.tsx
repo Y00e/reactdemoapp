@@ -6,7 +6,7 @@ const HelloWorld = () => {
     const [meddelande, setMeddelande] = useState<string>('');
 
     useEffect(() => {
-        axios.get('http://localhost:8080/hello')
+        axios.get('https://y00e.github.io/reactdemoapp/')
         .then(response => {
             setMeddelande(response.data);
         });
